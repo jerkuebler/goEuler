@@ -4,10 +4,10 @@ import "fmt"
 
 func main(){
 
-	var result = 0
-	var new_num = 0
-	var temp1 = 0
-	var temp2 = 1
+	result := 0
+	new_num := 0
+	temp1 := 0
+	temp2 := 1
 	for temp1 < 4000000{
 		new_num = temp1 + temp2
 		temp2 = temp1
