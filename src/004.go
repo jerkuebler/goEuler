@@ -17,8 +17,8 @@ func reverse_int(n int) int {
 func main() {
 
 	max_num := 0
-	for i := 99; i < 1000; i++ {
-		for j := 99; j < 1000; j++ {
+	for i := 100; i < 1000; i++ {
+		for j := 100; j < 1000; j++ {
 			new_num := i * j
 			if new_num == reverse_int(new_num) && new_num > max_num{
 				max_num = new_num
