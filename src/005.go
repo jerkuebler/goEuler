@@ -17,9 +17,9 @@ func main() {
 	num := 0
 	i := 0
 
-	for num < 1{
+	for num < 1 {
 		i += 20
-		if any(i){
+		if any(i) {
 			num = i
 		}
 	}
