@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"math"
 )
+
 func is_prime(x int) bool {
 
 	max_num := math.Pow(float64(x), 0.5)
@@ -17,16 +18,16 @@ func is_prime(x int) bool {
 	return true
 }
 
-func main(){
+func main() {
 
 	x := 600851475143
 	factor_list := []int{}
 	max_prime := 0
 	max_num := math.Pow(float64(x), 0.5)
-	for i := 0; i < int(max_num); i++{
-		if math.Mod(float64(x), float64(i)) == 0{
+	for i := 0; i < int(max_num); i++ {
+		if math.Mod(float64(x), float64(i)) == 0 {
 			factor_list = append(factor_list, i)
-			if is_prime(i){
+			if is_prime(i) {
 				max_prime = i
 			}
 		}
